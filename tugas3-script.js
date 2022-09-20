@@ -11,9 +11,12 @@ if (gender == 'p' || gender == 'P'){
 }
 
 order = prompt("Inputkan pesanan minuman anda")
+console.log("oderan" + order)
 
 if (order == "jus"){
     alert("Mohon maaf, jus tidak tersedia.")
+} else if (order == ""){
+    alert(`${sapaan} ${nama} belum memesan`)
 } else {
     alert(`Siap ${sapaan} ${nama}, satu ${order} segera datang!`)
 }
