@@ -11,7 +11,6 @@ if (gender.toLowerCase() == 'p'){
 }
 
 order = prompt("Inputkan pesanan minuman anda")
-console.log("oderan" + order)
 
 if (order.toLowerCase() == "jus" ){
     alert("Mohon maaf, jus tidak tersedia.")
