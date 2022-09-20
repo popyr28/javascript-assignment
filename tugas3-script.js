@@ -2,10 +2,10 @@ var nama = prompt("Inputkan Nama")
 var gender = prompt("Inputkan gender < p / l >")
 var sapaan = ""
 
-if (gender == 'p' || gender == 'P'){
+if (gender.toLowerCase() == 'p'){
     sapaan = "Mrs."
     alert("Selamat Datang, "+sapaan+" "+nama)
-} else if (gender == 'l' || gender == 'L'){
+} else if (gender.toLowerCase() == 'l'){
     sapaan = "Mr."
     alert("Selamat Datang, "+sapaan+" "+nama)
 }
@@ -13,7 +13,7 @@ if (gender == 'p' || gender == 'P'){
 order = prompt("Inputkan pesanan minuman anda")
 console.log("oderan" + order)
 
-if (order == "jus"){
+if (order.toLowerCase() == "jus" ){
     alert("Mohon maaf, jus tidak tersedia.")
 } else if (order == ""){
     alert(`${sapaan} ${nama} belum memesan`)
